@@ -4,7 +4,7 @@ import webbrowser
 net = Network(height="1500px", width="100%", bgcolor="#b3b3cc", font_color="white")
 
 
-# Stark, Lannister families, and additional characters
+# Adding character family nodes
 stark_nodes = [
     (1, "Ned Stark", "House Stark", 35),
     (2, "Catelyn Stark", "House Stark", 35),
@@ -62,7 +62,6 @@ for child in shared_children_nodes:
 net.add_edge(1, jon_snow_node[0])  
 
 
-# Save the network to an HTML file directly without using show()
 filename = "network_visualization.html"
 net.save_graph(filename)
 
